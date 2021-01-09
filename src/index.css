@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.issue {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.issue:hover,
+.issue:focus {
+  background-color: #f6f8fa;
+}
+
+.issue>div {
+  line-height: 10px;
+  padding: 10px;
+}
+
+.issue__details {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.issue__details__meta {
+  font-size: 12px;
+  font-weight: 500;
+  color: #586069;
+  padding-right: 5px;
+  margin-top:5px;
+}
+
+.issue__details__meta>div {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.issue__details__title {
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.issue__details__title--text {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.label {
+  padding: 3px 5px;
+  font-size: 12px;
+  border-radius: 8px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.issue__comments {
+  min-width: 50px;
+}
+
+.issue__comments__counter {
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+  color: #586069;
+}
+
+.issue__comments__counter>div {
+  padding-left: 5px;
+}
+
+.issue__assignees {
+  position: relative;
+}
+
+.assignee {
+  position: absolute;
+  left: -24px;
+}
+
+.assignee img {
+  border-radius: 2px;
+}
+
+.status-icon{
+position:absolute;
+width: 10px;
+height:10px;
+border-radius: 50%;
+}
+.open-icon{
+  background: green;
+}
+.close-icon {
+  background: red;
+}
