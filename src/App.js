@@ -25,16 +25,17 @@ function App() {
 
   const pageinateUrl = (items, page, type) => {
     // let pg = page;
+    const url = "https://api.github.com/repos/microsoft/vscode/issues";
     if (type) {
       if (type === "next") {
         setPageCount(pageCount + 1);
-        return `https://api.github.com/repos/microsoft/vscode/issues?per_page=${items}&page=${page}`;
+        return `${url}?per_page=${items}&page=${page}`;
       } else {
         setPageCount(pageCount - 1);
-        return `https://api.github.com/repos/microsoft/vscode/issues?per_page=${items}&page=${page}`;
+        return `${url}?per_page=${items}&page=${page}`;
       }
     } else {
-      return `https://api.github.com/repos/microsoft/vscode/issues?per_page=${items}&page=${page}`;
+      return `${url}?per_page=${items}&page=${page}`;
     }
   };
 
