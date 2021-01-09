@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
 import Issue from "./components/Issue/Issue";
@@ -77,8 +76,6 @@ function App() {
       setIssuesList(response);
     });
   };
-
-  // console.log(issuesList);
 
   return (
     <div className="App">

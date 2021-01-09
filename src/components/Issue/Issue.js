@@ -23,19 +23,6 @@ const Issue = (props) => (
         {props.user && props.user.login ? <div>{props.user.login}</div> : null}
       </div>
     </div>
-    {/* <div className="issue__assignees">
-      <Assignees {...props.assignees} />
-    </div> */}
-    {/* <div className="issue__comments">
-      {props.comments.totalCount > 0 ? (
-        <div className="issue__comments__counter">
-          <div className="material-icons">chat_bubble_outline</div>
-          <div>{props.comments.totalCount}</div>
-        </div>
-      ) : (
-        ""
-      )}
-    </div> */}
   </div>
 );
 
